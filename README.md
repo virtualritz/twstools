@@ -22,24 +22,24 @@ A general use case covered by the tool set looks like this:
    option chains").
 2. Process the job file against TWS to get an output file containing the
    complete response without any loss of information.
+3.
+   a. Parse the output file to get the information you are needing
+      currently.
 
-3a. Parse the output file to get the information you are needing
-    currently.
-and/or
-3b. Parse the output file to generate further jobs from it (for
-    example generate a job file to get historical data for the received
-    5000 option contracts and goto 2.).
+   b. Parse the output file to generate further jobs from it (for
+      example generate a job file to get historical data for the received
+      5000 option contracts and goto 2.).
 
 
 The input/output file format is very simple xml which can be easily
-generated/converted from and to csv using the tools itself or any other
-tools. Per design the actual job processing tool is completely stupid -
+generated/converted from and to CSV using the tools itself or any other
+tools. Per design the actual job processing tool is completely stupid –
 just doing the given job but doing it very well.
 
-BTW the used xml format is intended to be independent from the tools
+The used XML format is intended to be independent from the tools
 itself to be used to carry all IB/TWS specific structs/messages for
 saving without loss of information and easy conversion to other
-existing TWS/API applications, see "Notes on the twsxml format"
+existing TWS/API applications; see "Notes on the `twsxml` format"
 
 ## Installation
 
